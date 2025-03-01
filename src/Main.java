@@ -31,16 +31,12 @@ public class Main {
         System.out.println("Task 3");
 
         int population = 12000000;
-        int birthRate = population / 1000 * 17;
-        int deathRate = population / 1000 * 8;
-        int totalPopulation = 0;
+        int year = 1;
 
-
-        for (int i = 0; i < 11; i++) {
-            totalPopulation = totalPopulation + birthRate - deathRate;
-            totalPopulation = totalPopulation + population;
-            System.out.println("Год " + i + ", численность населения составляет " + totalPopulation);
-
+        while (year <=10){
+            population = population + population/1000*17 - population/1000*8;
+            System.out.println("Год " + year + ", численность населения составляет " + population);
+            year++;
         }
 
         System.out.println("Task 4");
@@ -82,7 +78,7 @@ public class Main {
 
         System.out.println("Task 7");
 
-        int firstFriday = 0;
+        int firstFriday = 5;
 
         while (firstFriday < 32) {
             firstFriday++;
